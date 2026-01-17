@@ -1,0 +1,16 @@
+# ResNet18 MNIST Classification - Dependencies
+# ============================================================
+# Original Source: https://github.com/samcw/ResNet18-Pytorch
+# Adapted by: Dangi Naseeb (2120256035)
+#
+# Installation:
+#   conda create -n aiot python=3.10
+#   conda activate aiot
+#   pip install -r requirements.txt
+
+# PyTorch - core deep learning framework
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Numerical computing
+numpy>=1.19.0

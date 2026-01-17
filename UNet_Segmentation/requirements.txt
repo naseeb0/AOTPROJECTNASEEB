@@ -1,0 +1,19 @@
+# UNet Liver CT Segmentation - Dependencies
+# ============================================================
+# Original Source: https://github.com/yudijiao/UNet
+# Adapted by: Dangi Naseeb (2120256035)
+#
+# Installation:
+#   conda create -n aiot python=3.10
+#   conda activate aiot
+#   pip install -r requirements.txt
+
+# PyTorch - core deep learning framework
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Image Processing
+Pillow>=8.0.0
+
+# Visualization (for test results)
+matplotlib>=3.3.0

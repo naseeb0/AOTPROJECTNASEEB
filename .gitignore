@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# Data (download on Azure, don't push)
+ResNet18_Classification/data/
+*.gz
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Keep weights folder structure but ignore large files during initial push
+# After training, we'll force-add the .pth files
+*.pth
+
+# Logs
+*.log
+runs/

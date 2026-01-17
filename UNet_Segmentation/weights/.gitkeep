@@ -1,0 +1,4 @@
+# This file keeps the weights directory in git
+# Place trained model weights here:
+# - best_model.pth
+# - unet_liver_best.pth
