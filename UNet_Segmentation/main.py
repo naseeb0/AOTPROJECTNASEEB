@@ -229,8 +229,8 @@ def train(args):
     # OPTIMIZED: Adam with weight decay
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=1e-5)
     
-    # OPTIMIZED: Learning rate scheduler
-    scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5, verbose=True)
+    # OPTIMIZED: Learning rate scheduler (verbose removed for PyTorch compatibility)
+    scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=5)
     
     # OPTIMIZED: Augmented datasets
     train_dataset = AugmentedLiverDataset("data/train", train=True)
